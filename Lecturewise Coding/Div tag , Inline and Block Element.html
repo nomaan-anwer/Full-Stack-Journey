@@ -1,0 +1,101 @@
+        <!-- DIV Tag used for Division and wrapping
+        it does not have any semantic meaning just used to wrap elememts 
+        and tags inside it. acts as container -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div>
+            <article>
+                <ul>
+                    <li>
+                        <p>
+                            <section></section>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <section></section>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <section></section>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+    
+<!-- emmet shortcut (div>article>(ul>li*3)>p{hello}+section )-->
+<div>
+    <article>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>hello</p>
+        <section></section>
+    </article>
+</div>
+
+
+<!-- 
+            BLOCK ELEMENT AND INLINE ELEMENT
+    BLOCK Element : 
+            - appers in next line always.
+            - takes all the space from left to right.
+
+    INLINE Element :
+            - appears in same line.
+            - takes only space of the content.
+    
+            Example - -->
+
+    <!-- paragraph tag is a BLOCK ELEMENT -->
+        <p style="background-color: aqua;">this is Block Element</p>
+        <p style="background-color: yellow;">It appears in next line</p>
+
+    <!-- span tag is an INline Element -->
+        <span style="background-color: green;">this is an inline element</span>
+        <span style="background-color: blue;">this appears on same line</span>
+
+    <!-- Div tag is a Block element  -->
+    <div style="background-color: aqua;">This is a Block element</div>
+    <div style="background-color: goldenrod;">it appears on next line</div>
+
+    <!-- display sttyle can convert a block into inline -->
+
+        <div style="background-color: blueviolet; display: inline;">here its block but acting as inline</div>
+
+    <!-- Calling and Mailing method using anker tag-->
+       <a href="mailto:nomaananwer@gmail.com">Email</a>
+       <a href="tel:73912746997">Call us</a> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
