@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- label for and input id should be same 
+              to be linked with eachother -->
+
+        <!-- Using Label , Input (text,password,date,submit)         -->
+        <form>
+            <label for="email">Enter Email Id:</label>
+            <input type="text" id="email">
+
+           <br><br>
+
+            <label for="password1">Enter Password:</label>
+            <input type="password" id="password1">
+
+            <br><br>
+
+            <label for="DOB">Enter DOB</label>
+            <input type="date" id="DOB">
+
+            <br><br>
+
+            <button>Submit</button>
+            <input type="submit" value="Click Here">
+            
+        </form>
+        <br><br>
+
+        <!-- Example 2 -->
+        <!-- Using select , textarea , fieldset , legend  -->
+        <form>
+            <fieldset>
+                <legend>Form Dummy</legend>
+                <br>
+            <label for="snacks">Choose your Snack:</label>
+            <select name="Snacks" id="snacks">
+                <option value="maggi">Maggi</option>
+                <option value="chips">Chips</option>
+                <option value="kurkure">kurkure</option>
+            </select>
+
+            <br><br>
+            <label for="textarea1">Write Your Views</label>
+            <br>
+            <textarea name="textarea1" id="textarea1" placeholder="enter here"></textarea>
+            
+        </fieldset>
+
+        </form>
+        <br><br>
+
+        <!-- Example 3 -->
+        <!-- Using radio , checkbox , fileupload , imagebutton -->
+        <form>
+
+            <input type="button" name="Button1" value="Click">
+            <br><br>
+
+            <input type="radio" id="radio1" >
+            <label for="radio1">Male</label>
+            <br>
+            <input type="radio" id="radio2" >
+            <label for="radio2">Female</label>
+
+            <br><br>
+
+            <input type="checkbox" id="chck1">
+            <label for="chck1">C++</label>
+            <br>
+            <input type="checkbox" id="chck2">
+            <label for="chck2">Java</label>
+
+            <br><br>
+
+            <label for="file1">Upload</label>
+            <input type="file" id="file1">
+            <br><br>
+
+            <input type="image" name="imageButton" src="C:\\Users\\ASUS\Downloads\\Download.png"
+            alt="file not found" height="100px" width="100px">
+
+        </form>
+
+    </body>
+    </html>
