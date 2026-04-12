@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.container{
+        border: solid 2px black;
+        height: 1000px;
+    }
+.box{
+    height: 4000px;
+    background-color:green;
+}
+
+#p1{
+
+/* Absolute Positioning uses all left top bottom right
+ attributes but holds the previous space too     */
+    
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    right: 6px;
+    bottom: 10px;
+}
+#p2{
+
+/* Absolute Positioning does uses top left ... but the prevous
+ space of the pic is taken by another one */
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+    left: 200px;
+}
+#p3{
+
+/* Fixed Positioning stays throughout the page  */
+    position: fixed;
+    height: 300px;
+    width: 300px;
+}
+#p4{
+
+/* Sticky position stays till another div reaches */
+    position: sticky;
+    top: 50px;
+    left: 800px;
+    height: 300px;
+    width: 300px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <img id="p1" src="Media Items/download (1).jpg" alt="photo1">
+        <img id="p2" src="Media Items/download.jpg" alt="photo2">
+        <img id="p3" src="Media Items/Funny memes.jpg" alt="photo3">
+        <img id="p4" src="Media Items/how to stick stickers on laptop _ teaisfantastic Shop _ Redbubble.jpg" alt="photo4">
+
+    </div>
+
+    <div class="box">
+
+    </div>    
+</body>
+</html>
