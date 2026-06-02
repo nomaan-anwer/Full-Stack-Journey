@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* media query is like a if condition - if size exceeds 400 px 
+        do these statements */
+        /* @media(min-width:400px){
+            .box{
+                background-color: bisque;
+            }
+        } */
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color:aqua;
+            border: 4px solid black ;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly ;
+        }
+        #box1{
+            display: flex;
+            width: 200px;
+            flex-direction:column;
+        }
+        #box2{
+            width: 200px;
+            align-items: center;
+        }
+        p{
+            border: 2px black solid;
+        }
+        img{
+            height: 180px;
+            width: 180px;
+            
+        }
+        @media(max-width:600px){
+            .box{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box" id="box1">
+            <p>Text 1</p>
+            <p>Text 2</p>
+        </div>
+        <div class="box" id="box2">
+            <img src="Media Items/download (1).jpg" alt="photo">
+        </div>
+    </div>
+</body>
+</html>
