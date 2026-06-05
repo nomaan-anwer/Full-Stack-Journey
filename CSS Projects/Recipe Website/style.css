@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navList{
+    margin-left: 20px;
+    margin-right: 40px;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navContainer{
+    width: 100vw;
+   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    min-height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+}
+.container{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+}
+#navLogo{
+    margin-left: 70px;
+    font-size: 2.8rem;
+    color: white;
+}
+#navitems{
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.contentBox{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footerbox{
+   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    min-height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerbox p{
+    color:  white;
+}
+.rightbox img{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    transition: all 0.1s 0s linear;
+}
+.rightbox img:hover{
+    transform: scale(1.08);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+.leftbox h3{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+#ingbox{
+    padding: 10px;
+}
+#recipebox{
+    padding: 10px;
+}
