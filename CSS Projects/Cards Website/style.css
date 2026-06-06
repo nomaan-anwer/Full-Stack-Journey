@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card1{
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px black solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    transition: all 0.3s 0s linear;
+    
+}
+.card1:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card1 img{
+    width: 100%;
+    border-radius: 7px;
+}
+.card1 h2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card1 p{
+    font-size: 1rem;
+    font-style: italic;
+    text-align: justify;
+}
+.card2{
+     height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px black solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+    transition: all 0.3s 0s linear;
+
+}
+.card2:hover{
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.05);
+    
+}
+.card2 #img1{
+    height: 30%;
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.card2 h2{
+    font-size: 1.06rem;
+    text-align: center;
+}
+.card2 p{
+    text-align: center;
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 196, 208);
+    height: 40px;
+    width: 85%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.plan img{
+    height: 30px;
+    width: 30px;
+}
+.plan a{
+    text-decoration: none;
+}
+.card2 button{
+    padding: 10px;
+    background-color: rgb(255,4, 54);
+    color: white;
+    font-family: monospace;
+    font-size: 1.02rem;
+    border: white 1px solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.2s 0s linear;
+
+}
+.card2 button:hover{
+    border:rgb(255,4, 54) 1px solid ;
+    color: rgb(255,4, 54);
+    background-color: white;
+    cursor: pointer;
+}
