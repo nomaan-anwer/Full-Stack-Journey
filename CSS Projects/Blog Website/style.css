@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+/* Main Container */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.headerPara{
+    width: 60%;
+    margin: auto;
+    color: gray;
+    line-height: 1.5;
+}
+
+/* Blog Grid */
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+
+/* Card */
+.card1{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Blog Image */
+.cardimage{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Title */
+.cardtitle{
+    font-size: 1.3rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+/* Description */
+.card1 p{
+    padding: 0 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.cardfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Author Section */
+.authorinfo{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.avatar img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.avatarinfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatarinfo span:first-child{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.avatarinfo span:last-child{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/* Tag */
+.cardtag{
+    border: 1px solid #ccc;
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Tablet */
+@media (max-width: 900px){
+    .main{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .headerPara{
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .headerPara{
+        width: 100%;
+    }
+}
